@@ -5,7 +5,7 @@ Naveen M S:
 
 
 
-
+Array.prototype.splice()
 Jeevithan S:
 
 
