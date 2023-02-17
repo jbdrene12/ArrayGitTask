@@ -16,7 +16,7 @@ Sanju Dani:
 
 
 
-
+Array.prototype.reduceRight()
 Abinesh Jain
 
 
