@@ -1,6 +1,7 @@
 Array Filter:
 
 Naveen M S:
+Array.prototype.some()
 
 
 
