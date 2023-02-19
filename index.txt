@@ -12,7 +12,8 @@ Array.prototype.splice()
 
 
 
-Sanju Dani:
+Sanju Daniel:
+Array.prototype.shift()
 
 
 
