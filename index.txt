@@ -60,6 +60,7 @@ Naveen M S:
        
      Example       :
           let numbers = [1, 2, 3, 4, 5, 6];
+           // 6 + 5 + 4 + 3 + 2 + 1
            // function that adds last two values of the numbers array
           function sum_reducer(accumulator, currentValue) {
           return accumulator + currentValue; }
