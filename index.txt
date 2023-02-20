@@ -1,8 +1,28 @@
-Array Filter:
 
 Naveen M S:
-Array.prototype.some()
-
+---------------------------------------------------------------------------------------------
+1﻿ 𝗔𝗿𝗿𝗮𝘆.𝗽𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲.𝘀𝗼𝗺𝗲() 
+   Definition : 
+      The some() method tests whether any of the array elements pass the given test function.
+      
+   syntax     :
+      syntax of the some() method is:
+      arr.some(callback(currentValue), thisArg);
+ 
+   Example    :  
+      // the following function returns an even number
+      function isEven(element) {
+       return element % 2 === 0;
+       } 
+      let arr1 = [1, 3, 2, 5, 4];
+      // checks whether the numbers array contain at least one even number
+        console.log(arr1.some(isEven));
+      // Output: true 
+      let arr2 = [37,55,79];
+         console.log(arr2.some(isEven));
+       // Output : false 
+---------------------------------------------------------------------------------------------  
+2﻿     
 
 
 
