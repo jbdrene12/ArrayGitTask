@@ -13,7 +13,29 @@ Array.prototype.splice()
 
 
 Sanju Daniel:
-Array.prototype.shift()
+
+1. Array.prototype.shift()
+        The shift() function removes the first element of an array and returns the value.
+
+    eg: let a = [ 1, 2, 3, 4];
+        let b = a.shift();
+
+        console.log(a) --> [ 2, 3, 4]
+        console.log(b) --> 1
+
+2. Array.prototype.slice()
+        The slice() function returns a copy of the array or array within the specified limits.
+
+    eg: let a = [ 1, 2, 3, 4, 5];
+        let b = a.slice();
+
+        console.log(a) --> [ 1, 2, 3, 4, 5]
+        console.log(b) --> [ 1, 2, 3, 4, 5]
+
+        let c = a.slice(2, 4)
+        console.log(c) --> [ 3, 4]
+        let d = a.slice(2)
+        console.log(d) --> [ 3, 4, 5]
 
 
 
