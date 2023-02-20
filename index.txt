@@ -5,8 +5,7 @@ Naveen M S:
    Definition : 
       The some() method tests whether any of the array elements pass the given test function.
       
-   syntax     :
-      syntax of the some() method is:
+   Syntax     :
       arr.some(callback(currentValue), thisArg);
  
    Example    :  
@@ -15,14 +14,99 @@ Naveen M S:
        return element % 2 === 0;
        } 
       let arr1 = [1, 3, 2, 5, 4];
-      // checks whether the numbers array contain at least one even number
+      // checks whether the numbers arr1 contain at least one even number
         console.log(arr1.some(isEven));
       // Output: true 
       let arr2 = [37,55,79];
          console.log(arr2.some(isEven));
        // Output : false 
 ---------------------------------------------------------------------------------------------  
-2﻿     
+2﻿ 𝗝𝗮𝘃𝗮𝘀𝗰𝗿𝗶𝗽𝘁 𝗔𝗿𝗿𝗮𝘆 𝗿𝗲𝗱𝘂𝗰𝗲()
+   Definition :
+    The reduce() method executes a reducer function on each element of the array and returns a single output value. 
+    reduce() does not change the original array.
+    reduce() executes the given function for each value from left to right.
+    Calling reduce() on an empty array without initialValue will throw TypeError
+    
+   Syntax     : 
+      arr.reduce(callback(accumulator, currentValue), initialValue);
+      
+   Example    :
+       const array1 = ["it ", "is ", "fun."];
+        // it + is + fun
+        function joinStrings(accumulator, currentValue) {
+            return accumulator + currentValue; }
+       // reduce join each element of the string
+       let joinedString = array1.reduce(joinStrings);
+       console.log(joinedString);
+       // Output: it is fun.
+       
+       const array2 = [1, 2, 3, 4];
+       // 0 + 1 + 2 + 3 + 4
+       const initialValue = 0;
+       const sumWithInitial = array2.reduce( (accumulator, currentValue) => accumulator + currentValue, initialValue)
+       console.log(sumWithInitial);
+       // output: 10
+---------------------------------------------------------------------------------------------        
+  3﻿ 𝗝𝗮𝘃𝗮𝘀𝗰𝗿𝗶𝗽𝘁 𝗔𝗿𝗿𝗮𝘆 𝗿𝗲𝗱𝘂𝗰𝗲𝗥𝗶𝗴𝗵𝘁()
+     Definition   :
+        The reduceRight() method reduces the array to a single value by executing a callback function on two values of the array.
+        reduceRight() does not change the original array.
+        reduceRight() executes the given function for each value from right to left.
+        Calling reduceRight() on an empty array without initialValue will throw TypeError
+        
+     Syntax        :
+       arr.reduceRight(callback(accumulator, currentValue), initialValue);
+       
+     Example       :
+          let numbers = [1, 2, 3, 4, 5, 6];
+           // function that adds last two values of the numbers array
+          function sum_reducer(accumulator, currentValue) {
+          return accumulator + currentValue; }
+          // returns a single value after reducing the numbers array
+         let sum = numbers.reduceRight(sum_reducer);
+         console.log(sum);
+          // output: 21
+---------------------------------------------------------------------------------------------  
+  4﻿ 𝗔𝗿𝗿𝗮𝘆.𝗽𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲.𝘀𝗵𝗶𝗳𝘁()
+
+     Definition    :
+         The shift() method removes the first element from an array and returns that element.
+         It changes the original array.
+         No parameters , means it doesn't accepts any arguments.
+         
+      Syntax       :
+         arr.shift()
+         
+      Example      :
+          let letters = ["a", "b", "c", "c"];
+
+          // removes the first element of the array
+          let firstLetter = languages.shift();
+          console.log(firstLetter);
+          console.log(letters);
+          // Output: a
+          // Output: [ 'b', 'c', 'd' ]
+ ---------------------------------------------------------------------------------------------  
+   5﻿ 𝗔𝗿𝗿𝗮𝘆.𝗽𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲.𝘀𝗹𝗶𝗰𝗲()
+       
+      Definition   :
+             To simply say ,it extracts elements from the given array.
+             Creates new array .
+             Original array will remains same.
+             
+      Syntax       :
+              arr.slice(start, end)
+     
+      Example      :
+              let numbers = [2, 3, 5, 7, 11, 13, 17];
+            // create another array by slicing numbers from index 3 to 5
+            let newArray = numbers.slice(3, 6);
+           console.log(newArray);
+           // Output: [ 7, 11, 13 ]
+---------------------------------------------------------------------------------------------  
+          
+
 
 
 
