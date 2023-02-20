@@ -1,6 +1,7 @@
 Array Filter:
 
 Naveen M S:
+Array.prototype.some()
 
 
 
@@ -8,7 +9,9 @@ Naveen M S:
 
 Jeevithan S:
 Array.prototype.splice()
-
+    The slice() is a method of copying values from an array and it can save the
+ copied values to the array only. The original arrays will not be changed. Copying 
+values from an array is done with the start index and end index.
 
 
 
