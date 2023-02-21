@@ -123,31 +123,79 @@ values from an array is done with the start index and end index.
 Sanju Daniel:
 
 1. Array.prototype.shift()
-        The shift() function removes the first element of an array and returns the value.
+        The shift() method removes the first element of an array and returns the value.
 
-    eg: let a = [ 1, 2, 3, 4];
+   Syntax: array.shift()
+   eg: let a = [ 1, 2, 3, 4];
         let b = a.shift();
 
-        console.log(a) --> [ 2, 3, 4]
-        console.log(b) --> 1
+        console.log(a); // --> [ 2, 3, 4]
+        console.log(b); // --> 1
 
 2. Array.prototype.slice()
-        The slice() function returns a copy of the array or array within the specified limits.
+        The slice() method returns a copy of the array or array within the specified limits.
 
-    eg: let a = [ 1, 2, 3, 4, 5];
+   Syntax: array.slice(start, end)
+   eg: let a = [ 1, 2, 3, 4, 5];
         let b = a.slice();
 
-        console.log(a) --> [ 1, 2, 3, 4, 5]
-        console.log(b) --> [ 1, 2, 3, 4, 5]
+        console.log(a); // --> [ 1, 2, 3, 4, 5]
+        console.log(b); // --> [ 1, 2, 3, 4, 5]
 
-        let c = a.slice(2, 4)
-        console.log(c) --> [ 3, 4]
-        let d = a.slice(2)
-        console.log(d) --> [ 3, 4, 5]
+        let c = a.slice(2, 4);
+        console.log(c); // --> [ 3, 4]
+        let d = a.slice(2);
+        console.log(d); // --> [ 3, 4, 5]
 
 3.  Array.prototype.some()
-    
+      The some() method returns true if one element satisfies the condition in the provided function. It doesn't modify thye array.
 
+   Syntax: array.some(function(value, index, arr), this)
+   eg. let a = [ 1, 2, 3, 4, 5];
+
+      let funcFour = (item) => item > 4; 
+      let funcTen = (item) => item >= 10;
+
+      console.log(a.some(funcFour)); // --> true
+      console.log(a.some(funcTen)); // --> false
+    
+4. Array.prototype.reduce()
+      The reduce() method executes a reducer function for each array element. This method doesnot change the original array.
+  
+   Syntax: array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+   eg. let a = [ 1, 2, 3, 4, 5, 6];
+
+       let b = a.reduce(myFunction);
+
+       function myFunction(total, num) {
+          return total - num;          // total --> initial value / previously returned  value
+                                       // currentValue (num) --> each element
+      }
+      console.log(b)   // --> -19 ( 1-2-3-4-5-6 )
+
+5. Array.prototype.reduceRight()
+      The reduce() method executes a reducer function for each array element. This method doesnot change the original array.
+   It executes elements from right to left. 
+
+     Syntax: array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+   eg. let a = [ 1, 2, 3, 4, 5, 6];
+
+       let b = a.reduce(myFunction);
+
+       function myFunction(total, num) {
+          return total - num;          // total --> initial value / previously returned  value
+                                       // currentValue (num) --> each element
+      }
+      console.log(b)   // --> -19 ( 1-2-3-4-5-6 )  Syntax: array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+   eg. let a = [ 1, 2, 3, 4, 5, 6];
+
+       let b = a.reduce(myFunction);
+
+       function myFunction(total, num) {
+          return total - num;          // total --> initial value / previously returned  value
+                                       // currentValue (num) --> each element
+      }
+      console.log(b)   // --> -9 ( 6-5-4-3-2-1 )
 
 Array.prototype.reduceRight()
 Abinesh Jain
