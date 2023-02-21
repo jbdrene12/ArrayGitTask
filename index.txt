@@ -209,16 +209,7 @@ Sanju Daniel:
       The reduce() method executes a reducer function for each array element. This method doesnot change the original array.
    It executes elements from right to left. 
 
-     Syntax: array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
-   eg. let a = [ 1, 2, 3, 4, 5, 6];
-
-       let b = a.reduce(myFunction);
-
-       function myFunction(total, num) {
-          return total - num;          // total --> initial value / previously returned  value
-                                       // currentValue (num) --> each element
-      }
-      console.log(b)   // --> -19 ( 1-2-3-4-5-6 )  Syntax: array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+   Syntax: array.reduceRight(function(total, currentValue, currentIndex, arr), initialValue)
    eg. let a = [ 1, 2, 3, 4, 5, 6];
 
        let b = a.reduce(myFunction);
