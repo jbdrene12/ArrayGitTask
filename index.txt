@@ -220,8 +220,53 @@ Sanju Daniel:
       }
       console.log(b)   // --> -9 ( 6-5-4-3-2-1 )
 
-Array.prototype.reduceRight()
+
 Abinesh Jain
+1.Array.prototype.reduce()
+   Returns                      -- Value
+   Modifies existing Array      -- No
+   Required parameters          -- Function & Initial Value(If omitted it takes the 1st value in array)
+   Function required parameters -- Two parameters
+   Use case                     -- Adding numbers in an array
+
+   Syntax : array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
+2.Array.prototype.reduceRight()
+   Returns                      -- Value
+   Modifies existing Array      -- No
+   Required parameters          -- Function
+   Function required parameters -- Two parameters
+   Use case                     -- Adding numbers in an array             
+
+   Syntax : array.reduceRight(function(total, currentValue, currentIndex, arr))
+
+3.Array.prototype.shift()
+   Returns                      -- Value
+   Modifies existing Array      -- Yes
+   Required parameters          -- No
+   Function required parameters -- No
+   Use case                     -- Remove the first element in an Array
+
+   Syntax : array.shift()
+
+4.Array.prototype.slice()
+   Returns                      -- Array
+   Modifies existing Array      -- No
+   Required parameters          -- Value/Starting point
+   Function required parameters -- No
+   Use case                     -- Trim or Copy a portion from array
+
+   Syntax : array.slice(start)
+
+5.Array.prototype.some()
+   Returns                      -- Boolean
+   Modifies existing Array      -- No
+   Required parameters          -- function
+   Function required parameters -- One parameter
+   Use case                     -- Check the items in an array
+
+   Syntax : Syntax: array.some(function(value))
+
 
 
 
