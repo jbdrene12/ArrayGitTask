@@ -323,7 +323,7 @@ const numbers = [1, -1, 2, 3];
 const num = numbers.slice(1,3);// (start, end) these are index values and end value is not included
 //shift() removes the first element of an array
 console.log(num);
-// num = -1, 2
+// num = -1, 2 .
 
 
 
