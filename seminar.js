@@ -4,17 +4,18 @@ let arr = [1, 2, 3, 4, 5, 6, 7];
 
 // Fuction to add the values in an array
 function sum(total, currentValue) {
+    console.log(currentValue);
     return total + currentValue;
 }
 
 // Function to check if a number is greater than 0
 function greaterThanZero(value) {
-    return value > 0;
+    return value < 0;
 }
 
 // reduce method
 
-// let result = arr.reduce(sum, 0);
+// let result = arr.reduce(sum);
 
 // reduceRight method
 

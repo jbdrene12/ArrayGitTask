@@ -225,7 +225,7 @@ Abinesh Jain
 1.Array.prototype.reduce()
    Returns                      -- Value
    Modifies existing Array      -- No
-   Required parameters          -- Function & Initial Value(If omitted it takes the 1st value in array)
+   Required parameters          -- Function
    Function required parameters -- Two parameters
    Use case                     -- Adding numbers in an array
 
