@@ -1,4 +1,4 @@
-
+﻿
 Naveen M S:
 ---------------------------------------------------------------------------------------------
 1﻿ 𝗔𝗿𝗿𝗮𝘆.𝗽𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲.𝘀𝗼𝗺𝗲() 
@@ -33,7 +33,7 @@ Naveen M S:
       
    Example    :
        const array1 = ["it ", "is ", "fun."];
-        // it + is + fun
+        // it + is + fun.
         function joinStrings(accumulator, currentValue) {
             return accumulator + currentValue; }
        // reduce join each element of the string
